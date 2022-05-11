@@ -2,7 +2,7 @@ package kr.hs.dgsw.java.dept1.d0420;
 
 import java.util.*;
 
-public class Adder {
+public abstract class Adder {
 	
 	protected final Scanner scanner;
 	
@@ -69,7 +69,7 @@ public class Adder {
 		}
 		
 		public static void main(String[] args) {
-			Adder adder = new Adder();
+			Adder adder = new Subtractor();
 			adder.execute();
 			
 		}		
