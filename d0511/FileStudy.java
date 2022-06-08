@@ -14,13 +14,13 @@ public class FileStudy {
 		File file3 = new File("D:\\2103박소영\\JAVA수업(산악)\\javaStudy");
 		
 		//파일 존재의 여부
-		boolean exist = false;
-		exist = file.exists();
-		System.out.println("파일의 존재 여부 확인");
-		System.out.println(file.getName()+" "+exist);
-		System.out.println(file2.getName()+" "+file2.exists());
-		System.out.println(file3.getName()+" "+file3.exists());
-		System.out.println();
+//		boolean exist = false;
+//		exist = file.exists();
+//		System.out.println("파일의 존재 여부 확인");
+//		System.out.println(file.getName()+" "+exist);
+//		System.out.println(file2.getName()+" "+file2.exists());
+//		System.out.println(file3.getName()+" "+file3.exists());
+//		System.out.println();
 		
 		//파일 경로
 		String path = file.getPath();
@@ -116,6 +116,17 @@ public class FileStudy {
 
 	}
 	
+	public void studyList() {
+		File dir = new File("D:\\");
+		
+		String[] list = dir.list();
+		File[] listFiles = dir.listFiles();
+		
+		for(String item : list) {
+			System.out.println(item);
+		}
+	}
+	
 	public Date makeDate(long unixTime) {
 		return new Date(unixTime);
 	}
@@ -127,9 +138,10 @@ public class FileStudy {
 	
 	public static void main(String[] args) throws Exception {
 		FileStudy fileStudy = new FileStudy();
-		//fileStudy.studyFileData();
+		fileStudy.studyFileData();
 		//fileStudy.studyManage(); 
-		fileStudy.studyDirectory();
+		//fileStudy.studyDirectory();
+		//fileStudy.studyList();
 	}
 	
 }
