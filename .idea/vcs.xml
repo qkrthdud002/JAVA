@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/java2_1/src/kr/hs/dgsw/dept1" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/java2_1/src/kr/hs/dgsw/java/dept1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/subject0511" vcs="Git" />
   </component>
 </project>

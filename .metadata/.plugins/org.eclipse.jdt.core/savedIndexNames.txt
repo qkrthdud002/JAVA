@@ -1,4 +1,0 @@
-INDEX VERSION 1.131+D:\2103박소영\JAVA수업(산악)\.metadata\.plugins\org.eclipse.jdt.core
-3779326612.index
-903807970.index
-1865797976.index
