@@ -41,9 +41,11 @@ public class PhoneNumber {
             FileWriter fw; //FileWriter의 fw라는 변수 선언
             System.out.print("1.입력 2.츌력 3.검색(이름) 4.검색(전화번호) 5.삭제 6.종료");
             System.out.println();
+            System.out.println("====================================================");
             System.out.print("숫자를 선택하세요 : ");
             int num = sc.nextInt();
-            if (controller.phone.size() == 0)
+            System.out.println("====================================================");
+            if (controller.phones.size() == 0)
                 //Controller의 변수 c의 객체변서 tel의 사이즈가 0 이면 실행
                 fw = new FileWriter("D:\\2103박소영\\JAVA수업(산악)\\PhoneNumber.txt", false);
                 // fw 변수에 FileWriter 객체를 생성해서 대입

@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="507864ea-9697-4c71-b728-02c50f99da2d" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/PhoneNumber.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject02/Controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject02/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject02/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject02/PhoneNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/d0615/CollectionStudy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/d0615/Generic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/d0615/Simple.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/networksub/ClientMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/networksub/Protocol.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/networksub/ServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JAVA수업(산악).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JAVA수업(산악).iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PhoneNumber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneNumber.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" beforeDir="false" afterPath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1/do0330/Cat.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1/do0330/Dog.java" beforeDir="false" />
@@ -60,6 +48,12 @@
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Dog.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Horse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Zoo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/PhoneNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/PhoneNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject02/Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject02/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject02/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/PhoneNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

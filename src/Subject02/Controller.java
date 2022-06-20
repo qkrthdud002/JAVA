@@ -3,27 +3,25 @@ package Subject02;
 import java.io.*;
 import java.util.*;
 
-
-
 public class Controller {
-    ArrayList<Phone> phone;    // Phone이 있는 ArrayList를 phone이라고 선언
+    List<Phone> phones;    // Phone이 있는 ArrayList를 phone이라고 선언
     FileWriter fw;
     Scanner sc;
     FileReader fr;
 
     public Controller() throws IOException {
-        phone = new ArrayList<Phone>();
+        phones = new ArrayList<>();
         // phone 변수에 ArrayList<Phone>객체 생성 해서 대입
         sc = new Scanner(System.in);
 
     }
 
-    public void input(FileWriter fw) throws IOException {
-        if (phone.size() == 0) // ArrayList 변수 phone의 크기가 0이면 실행
+    void input(FileWriter fw) throws IOException {
+        if (phones.size() == 0) // ArrayList 변수 phone의 크기가 0이면 실행
         {
 //            String opn1 = "이름"+"\t\t"+"전화번호"+"\r\n";
             //문자열 변수 opn1에 위에 문자열 대입
-            phone.add(new Phone("이름", "전화번호"));
+            phones.add(new Phone("이름", "전화번호"));
             //ArrayList 변수 tel의 리스트 추가 Phone 객체를 생성해서 추가
 //            fw.write(opn1);
             // FileWrite의 변수 fw를 이용해 write 함수 호출 파일에 문자열 쓰기
@@ -33,11 +31,12 @@ public class Controller {
         String name = sc.next(); // String name에 입력 값 대입
         System.out.print("전화번호 : "); //입력
         String number = sc.next(); // String number에 입력 값 대입
+        System.out.println("====================================================");
 
-        phone.add(new Phone(name, number));
+        phones.add(new Phone(name, number));
         //ArrayList 변수 tel의 리스트 추가 Phone 객체를 생성해서 추가 Phone은 입력받은 값을 생성자에 추가
 
-        phone.sort((Phone o1, Phone o2) -> {
+        phones.sort((Phone o1, Phone o2) -> {
             return o1.name.compareTo(o2.name);
         });
 
@@ -49,112 +48,120 @@ public class Controller {
         //FileWriter 끄기
     }
 
-    public void input(FileWriter fw, Phone p) throws IOException {
-        if (phone.size() == 0) // ArrayList 변수 tel의 크기가 0이면 실행
+    void input(FileWriter fw, Phone p) throws IOException {
+        if (phones.size() == 0) // ArrayList 변수 tel의 크기가 0이면 실행
         {
-            phone.add(new Phone("이름", "전화번호"));
+            phones.add(new Phone("이름", "전화번호"));
         }
         String total = p.name + "\t\t" + p.phoneNumber + "\r\n";
         fw.write(total);
         fw.close();
     }
 
-    public void search() {
+    void search() {
         System.out.print("검색할 이름을 넣어주세요 : ");
         String search = sc.next(); // 문자열 search에 입력 문자열 대입
 
         boolean check = false; // boolean check 변수를 false로 초기화
-        int index = 0; // int index 변수를 -1로 초기화
-        //index = -1;
-        for (int i = 0; i < phone.size(); i++)
         //int i 변수를 0으로 대입 i는 ArrayList tel의 크기보다 작으면 반복 반복 때마다 i는 1씩 증가
-        {
-            if (phone.get(i).name.equals(search))
-            //ArrayList tel에 i 인덱스에 이름이 search와 같으면 아래 명령어 실행
-            {
-                index = i; // 변수 index에 i를 대입
-                check = true; // 변수 check에 true 대입
+        for (Phone phone : phones) {
+            String name = phone.name;
+            String number = phone.phoneNumber;
+            if (name.matches(String.format("(.*)%s(.*)", search))) {
+                System.out.println(name + "\t" + number);
+                check = true;
             }
         }
-
-        if (check == true)
-            // 변수 check가 true 라면 아래 명령어 실행
-            System.out.println(phone.get(index).name + "\t" + phone.get(index).phoneNumber);
-        else
+        if (!check) {
             System.out.println("검색결과가 없습니다.");
+        }
     }
 
-    public void searchNum(){
+    void searchNum(){
         System.out.println("검색할 전화번호를 넣어주세요 : ");
         String searchNum = sc.next();
 
         boolean check = false;
-        int index = 0;
-        for(int i=0; i<phone.size(); i++){
-            if(phone.get(i).phoneNumber.contains(searchNum)){
-                index = i;
+        for (Phone phone : phones) {
+            String name = phone.name;
+            String number = phone.phoneNumber;
+            if (number.matches(String.format("(.*)%s(.*)", searchNum))) {
+                System.out.println(name + "\t" + number);
                 check = true;
             }
         }
-        if(check==true)
-            System.out.println(phone.get(index).name + "\t" + phone.get(index).phoneNumber);
-        else
+        if(!check)
             System.out.println("검색결과가 없습니다.");
     }
 
-    public void delete(FileWriter fw) throws IOException {
+    void isOverlap(String name) {
+        List<Phone> namePhoneList = new ArrayList<>();
+        for (Phone p : phones) {
+            String pName = p.name;
+            if (pName.equals(name)) {
+                namePhoneList.add(p);
+            }
+        }
+        namePhoneList.sort(Comparator.comparing((Phone o) -> o.name));
+        phones.clear();
+        phones = namePhoneList;
+    }
+
+    void delete(FileWriter fw) throws IOException {
         System.out.print("이름입력 : ");
         String search1 = sc.next();
 
-        for (int i = 0; i < phone.size(); i++)
-        //int i 변수를 0으로 대입 i는 ArrayList tel의 크기보다 작으면 반복 반복 때마다 i는 1씩 증가
-        {
-            if (phone.get(i).name.equals(search1))
-            //ArrayList phone에 i 인덱스에 이름이 search와 같으면 아래 명령어 실행
-            {
-                if (phone.get(i).name.equals(search1) == phone.get(i).name.equals(search1)) {
-                    System.out.println(phone.get(i).name + "\t\t" + phone.get(i).phoneNumber + "\r\t");
-                    System.out.println("중복된 이름이 있습니다.");
-                    System.out.print("전화번호를 입력하세요 : ");
-                    String search2 = sc.next();
-                    for (i = 0; i < phone.size(); i++) {
-                        if (phone.get(i).phoneNumber.contains(search2)) {
-                            System.out.println("삭제되었습니다.");
-                            phone.remove(i);
-                        }
-                    }
-                }
-            }
+        isOverlap(search1);
+        int phoneSize = phones.size();
+
+        if (phoneSize == 0) {
+            // 존재하지 않음
+            return;
         }
 
-        //파일에 나타냄.
-        for (int i = 0; i < phone.size(); i++)
-        //int i 변수를 0으로 대입 i는 ArrayList tel의 크기보다 작으면 반복 반복 때마다 i는 1씩 증가
-        {
-            //이름 정렬
-            phone.sort((Phone o1, Phone o2) -> {
-                return o1.name.compareTo(o2.name);
-            });
-            String tatal1 = phone.get(i).name + "\t\t" + phone.get(i).phoneNumber + "\r\n";
-            //문자열 tatal1에 ArrayList tel에 i인덱스 문자열 이름, 전화번호를 더해서 대입
-            fw.write(tatal1);
-            // FileWrite의 변수 fw를 이용해 write 함수 호출 파일에 tatal1문자열 쓰기
+        if (phoneSize > 1) {
+            System.out.println("중복된 이름이 있습니다.");
+            for (Phone phone : phones) {
+                System.out.printf("%s \t\t %s%n", phone.name, phone.phoneNumber);
+            }
+
+            System.out.print("전화번호를 입력해주세요 : ");
+            search1 = sc.next();
+            Phone target = phones.get(0);
+            for (Phone phone : phones) {
+                if (phone.phoneNumber.equals(search1)) {
+                    target = phone;
+                }
+            }
+            phones.remove(target);
         }
+        else {
+            phones.remove(phones.get(0));
+        }
+
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Phone phone : phones) {
+            stringBuilder.append(phone.name)
+                    .append("\t\t")
+                    .append(phone.phoneNumber)
+                    .append("\r\n");
+        }
+        fw.write(stringBuilder.toString());
         fw.close();
         //FileWriter 끄기
 
     }
 
-    public void deleteall(FileWriter fw) throws IOException {
+    void deleteall(FileWriter fw) throws IOException {
         File file = new File("D:\\2103박소영\\JAVA수업(산악)\\PhoneNumber.txt");
         if (file.exists()) {
             file.delete();
         }
     }
 
-    public void allPrint() throws IOException {
+    void allPrint() throws IOException {
         String filefolder = "D:\\2103박소영\\JAVA수업(산악)\\PhoneNumber.txt";
-        phone.clear();
+        phones.clear();
         //ArrayList tel의 내용 클리어해서 tel을 비움
         fr = new FileReader(filefolder);
         //FileReader fr에 FileReader 객체를 생성 생성자 인자에는 파일경로를 문저열로 넣어서 객체 생성
@@ -172,25 +179,25 @@ public class Controller {
 //            System.out.println(line1);
             splitLine1 = line1.split("\t\t");
             //문자열 splitLine 배열에 line1을 "\t\t"로 자른 문자열들을 대입
-            phone.add(new Phone(splitLine1[0], splitLine1[1]));
+            phones.add(new Phone(splitLine1[0], splitLine1[1]));
             //ArrayList tel 추가할때 Phone 객체를 생성 하고 생성자는 문자열 splitLine1 배열을 대입
         }
 
         //이름 정렬
-        phone.sort((Phone o1, Phone o2) -> {
+        phones.sort((Phone o1, Phone o2) -> {
             return o1.name.compareTo(o2.name);
         });
 
-        System.out.println("이름\t\t전화번호");
+        System.out.println("이름\t\t\t전화번호");
 
-        for (int i = 0; i < phone.size(); i++)
+        for (int i = 0; i < phones.size(); i++)
         //int i 변수를 0으로 대입 i는 ArrayList phone의 크기보다 작으면 반복 반복 때마다 i는 1씩 증가
         {
-            System.out.println(phone.get(i).name + "\t\t" + phone.get(i).phoneNumber);
+            System.out.println(phones.get(i).name + "\t\t" + phones.get(i).phoneNumber);
         }
 
         deleteall(new FileWriter(filefolder));
-        for (Phone p : phone) {
+        for (Phone p : phones) {
             File file = new File(filefolder);
             if (file.exists())
                 input(new FileWriter(filefolder,true), p);
@@ -199,4 +206,3 @@ public class Controller {
         }
     }
 }
-
