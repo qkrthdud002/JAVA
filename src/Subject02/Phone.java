@@ -19,6 +19,7 @@ public class Phone implements Comparator<String> {
     String phoneNumber;
 
     public Phone() {
+
     }
 
     public Phone(String name, String phoneNumber) {

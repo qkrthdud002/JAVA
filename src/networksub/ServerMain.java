@@ -73,7 +73,7 @@ public class ServerMain {
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Client와 연결되지 않습니다.");
-        }
+        } catch (ArrayIndexOutOfBoundsException ignored) {}
 
 
 //        protocol.receiveFile(received[1], Integer.parseInt(received[2]));

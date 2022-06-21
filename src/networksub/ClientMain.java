@@ -1,8 +1,7 @@
 package networksub;
 
 import javax.sound.midi.SysexMessage;
-import java.io.*;
-import java.net.InetAddress;
+import java.io.*;import java.net.InetAddress;
 import java.net.Socket;
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -26,7 +25,7 @@ public class ClientMain {
 //        while (true) {
 
         try {
-            socket = new Socket("127.0.0.1", 5000); // 서버가 열어놓은 포트 입력
+            socket = new Socket("10.80.162.213", 5000); // 서버가 열어놓은 포트 입력
             inputStream = new BufferedReader(new InputStreamReader(socket.getInputStream()));
             keyboardInput = new BufferedReader(new InputStreamReader(System.in));
             outGoing = new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream())));

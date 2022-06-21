@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="507864ea-9697-4c71-b728-02c50f99da2d" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/src/networksub/network.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PhoneNumber.txt" beforeDir="false" afterPath="$PROJECT_DIR$/PhoneNumber.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" beforeDir="false" afterPath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" afterDir="false" />
@@ -48,12 +49,17 @@
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Dog.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Horse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Zoo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Phone.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Phone.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/PhoneNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/PhoneNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subject02/Controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/networksub/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/networksub/ClientMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/networksub/ServerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/networksub/ServerMain.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Subject02/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject02/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Subject02/PhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/PhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/networksub/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networksub/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/networksub/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networksub/Protocol.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/networksub/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/networksub/ServerMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +118,20 @@
       <recent name="D:\2103박소영\JAVA수업(산악)\src\kr\hs\dgsw\hava\dept1\d0608" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.PhoneNumber">
+  <component name="RunManager" selected="Application.ServerMain">
+    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="networksub.ClientMain" />
+      <module name="JAVA수업(산악)" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="networksub.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CommandLs" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Bank1.CommandLs" />
       <module name="JAVA수업(산악)" />
@@ -203,10 +222,13 @@
       <item itemvalue="Application.ServerMain" />
       <item itemvalue="Application.PhoneNumber1234" />
       <item itemvalue="Application.PhoneNumber" />
+      <item itemvalue="Application.ClientMain" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServerMain" />
         <item itemvalue="Application.PhoneNumber" />
+        <item itemvalue="Application.ClientMain" />
         <item itemvalue="Application.PhoneNumber1234" />
       </list>
     </recent_temporary>
