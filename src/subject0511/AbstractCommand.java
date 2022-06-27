@@ -1,6 +1,7 @@
 package subject0511;
 
 import java.io.File;
+import java.io.IOException;
 
 public abstract class AbstractCommand {
 
@@ -17,7 +18,7 @@ public abstract class AbstractCommand {
         return false;
     }
 
-    public abstract File executeCommand();
+    public abstract File executeCommand() throws IOException;
 
     public static AbstractCommand build(File currentDirectory, String line)
             throws UnknownCommandException {
@@ -27,12 +28,14 @@ public abstract class AbstractCommand {
             return new CommandLs(currentDirectory, line);
         } else if (line.startsWith("quit")) {
             return new CommandExit(currentDirectory, line);
+        } else if(line.startsWith("rm")){
+            return new CommandRm(currentDirectory, line);
         } else {
             throw new UnknownCommandException();
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         SimpleCommander commander = new SimpleCommander();
         commander.execute();
     }

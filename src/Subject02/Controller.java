@@ -154,7 +154,6 @@ public class Controller {
         String[] splitLine1 = null;
         //문자열 배열 splitLine을 생성 하고 null 값 대입
 
-
         while ((line1 = reader1.readLine()) != null)
         //BufferReader reader1을 이용해 한줄을 읽어 와서 문자열 line1에 대입하고 line1이 널이 아니면 반복
         {

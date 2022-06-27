@@ -1,6 +1,7 @@
 package subject0511;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class SimpleCommander {
@@ -14,7 +15,7 @@ public class SimpleCommander {
         this.currentDirectory = new File("C:/");
     }
 
-    public void execute() {
+    public void execute() throws IOException {
 
         /* ���� prompt */
         System.out.println("Simple commander started");
