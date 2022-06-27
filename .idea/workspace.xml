@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="507864ea-9697-4c71-b728-02c50f99da2d" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject03/game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject04/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject04/SearchExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Subject04/Searcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/subject0511/CommandRm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/JAVA수업(산악).iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/JAVA수업(산악).iml" afterDir="false" />
+    <list default="true" id="507864ea-9697-4c71-b728-02c50f99da2d" name="Changes" comment="JavaSubject">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" beforeDir="false" afterPath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/dept1/do0330/Cat.java" beforeDir="false" />
@@ -54,18 +47,7 @@
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Dog.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Horse.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/java2_1/bin/kr/hs/dgsw/java/dept1/do0427/Zoo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/Subject02/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/subject0511/AbstractCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/subject0511/AbstractCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JAVA수업(산악)/subject0511/SimpleCommander.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JAVA수업(산악)/subject0511/SimpleCommander.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Subject02/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject02/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/subject0511/AbstractCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/subject0511/AbstractCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/subject0511/SimpleCommander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/subject0511/SimpleCommander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/AbstractCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/CommandCd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/CommandExit.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/CommandLs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/SimpleCommander.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/subject0511/UnknownCommandException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Subject03/game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Subject03/game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +107,7 @@
       <recent name="D:\2103박소영\JAVA수업(산악)\src\kr\hs\dgsw\hava\dept1\d0608" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SearchExecutor">
+  <component name="RunManager" selected="Application.game">
     <configuration name="AbstractCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="subject0511.AbstractCommand" />
       <module name="JAVA수업(산악)" />
@@ -239,8 +221,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SearchExecutor" />
         <item itemvalue="Application.game" />
+        <item itemvalue="Application.SearchExecutor" />
         <item itemvalue="Application.AbstractCommand" />
         <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.PhoneNumber" />
@@ -279,6 +261,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="JavaSubject" />
+    <option name="LAST_COMMIT_MESSAGE" value="JavaSubject" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
